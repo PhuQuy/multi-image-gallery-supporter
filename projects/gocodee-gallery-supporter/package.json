@@ -1,0 +1,27 @@
+{
+  "name": "gocodee-gallery-supporter",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PhuQuy/multi-image-gallery-supporter"
+  },
+  "author": {
+    "name": "Gocodee",
+    "email": "phuquy@gocodee.com"
+  },
+  "keywords": [
+    "gocodee",
+    "angular",
+    "angular2",
+    "angular4",
+    "gallery",
+    "image"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "marzipano": "^0.9.0"
+  }
+}

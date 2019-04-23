@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "gocodee-gallery-supporter": [
+        "dist/gocodee-gallery-supporter"
+      ],
+      "gocodee-gallery-supporter/*": [
+        "dist/gocodee-gallery-supporter/*"
+      ]
+    }
   }
 }
