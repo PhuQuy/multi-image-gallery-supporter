@@ -1,20 +1,20 @@
-import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 import * as Marzipano from 'marzipano';
 
 @Component({
     selector: 'lib-gocodee-gallery-supporter',
-    template: `
-  <div #image></div>
-  `,
+    templateUrl: './gocodee-gallery-supporter.component.html',
     styleUrls: ['./gocodee-gallery-supporter.component.css']
 })
 export class GocodeeGallerySupporterComponent implements OnInit {
     @Input() imageURL;
-    @ViewChild('image') image: ElementRef;
+    @ViewChild('imageAAA') asds: ElementRef;
     constructor() { }
 
     ngOnInit() {
-        var viewer = new Marzipano.Viewer(this.image.nativeElement);
+        // var viewer = new Marzipano.Viewer(document.getElementById('pano'));
+        var viewer = new Marzipano.Viewer(this.asds.nativeElement);
+
         var source = Marzipano.ImageUrlSource.fromString(
             this.imageURL
         );
