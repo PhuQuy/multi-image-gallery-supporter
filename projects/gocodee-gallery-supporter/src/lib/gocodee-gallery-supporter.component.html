@@ -1,3 +1,21 @@
-<div class="position-relative w-100 h-100vh">
-    <div #imageAAA id="pano"></div>
+<div id="aniimated-thumbnials" #lightgallery>
+  <a [href]="image" class="light-gallery-image">
+    <img [src]="image" #imagene />
+  </a>
 </div>
+
+<div style="display:none;" id="video1">
+  <video class="lg-video-object lg-html5" controls preload="none">
+    <source [src]="image" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+<ul id="video-gallery" #videoGallery>
+  <li data-html="#video1">
+    <img src="assets/img/architecture.jpeg" #videone />
+  </li>
+</ul>
+
+<button class="btn btn-success btn-lg mrb50" data-iframe="true" id="google-map" #pdfGallery
+  data-src="">Google
+  map</button>

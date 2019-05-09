@@ -3,7 +3,10 @@
   "dest": "../../dist/gocodee-gallery-supporter",
   "deleteDestPath": false,
   "lib": {
-    "entryFile": "src/public_api.ts"
+    "entryFile": "src/public_api.ts",
+    "externals": {
+        "./src/lib/lightgallery.js": "lightgallery"
+      }
   },
   "whitelistedNonPeerDependencies": [
     "marzipano"

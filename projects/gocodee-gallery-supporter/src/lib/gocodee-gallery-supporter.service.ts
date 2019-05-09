@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class GocodeeGallerySupporterService {
+    visible = new BehaviorSubject(false);
 
-  constructor() { }
+    public show() {
+        this.visible.next(true);
+    }
+    constructor() { }
 }
